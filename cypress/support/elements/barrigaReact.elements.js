@@ -23,5 +23,20 @@ class BarrigaReactElements {
     btnAlterar() {
         return cy.get('i[class="far fa-edit"]');
     }
+    btnReset() {
+        return cy.contains('a', 'Resetar');
+    }
+
+    menuExtrato() {
+        return cy.get('i[title="extrato"]');  
+    }
+
+    menuCadastrarMovimentacoes() {
+        return cy.get('i[class="fas fa-hand-holding-usd"]');
+    }
+
+    retornoHome() {
+        return cy.get('i[class="fas fa-home"]');
+    }
 }
 export default BarrigaReactElements

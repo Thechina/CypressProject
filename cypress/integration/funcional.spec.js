@@ -24,3 +24,20 @@ it('Login', () => {
     barrigaReactPageObjects.clickAlterar('Conta para saldo');
  })
 
+ it('Reset it option', () => {
+   barrigaReactPageObjects.clickSettings();
+   barrigaReactPageObjects.clickReset('Resetar');
+})
+
+it('Look extract', () => {
+   barrigaReactPageObjects.clickSettings();
+   barrigaReactPageObjects.clickExtrato();
+})
+
+it('Register transactions', () => {
+   barrigaReactPageObjects.clickCadastrarMovimentacoes();
+})
+
+it('Return Home', () => {
+   barrigaReactPageObjects.clickReturnHome();
+})

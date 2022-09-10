@@ -27,5 +27,21 @@ class BarrigaReactPageObjects {
     clickAlterar(account) {
         cy.contains('td', account).parent().find('i[class="far fa-edit"]').click();
     }
+
+    clickReset() {
+        barrigaReactElements.btnReset().click();
+    }
+
+    clickExtrato() {
+        barrigaReactElements.menuExtrato().click();
+    }
+
+    clickCadastrarMovimentacoes() {
+        barrigaReactElements.menuCadastrarMovimentacoes().click();
+    }
+
+    clickReturnHome() {
+        barrigaReactElements.retornoHome().click();
+    }
 }
 export default BarrigaReactPageObjects
