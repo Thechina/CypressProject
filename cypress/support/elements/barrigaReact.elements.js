@@ -23,17 +23,32 @@ class BarrigaReactElements {
     btnAlterar() {
         return cy.get('i[class="far fa-edit"]');
     }
+
+    
     btnReset() {
         return cy.contains('a', 'Resetar');
+    }
+
+    menuCadastrarMovimentacoes() {
+        return cy.get('i[class="fas fa-hand-holding-usd"]');
+    }
+
+    inputDescricao() {
+        return cy.get('[data-test=descricao]');
+    }
+
+    inputValor() {
+        return cy.get('[data-test="valor"]');
+    }
+
+    btnSalvar() {
+        return cy.get('button[class="btn btn-block btn-primary"]');
     }
 
     menuExtrato() {
         return cy.get('i[title="extrato"]');  
     }
 
-    menuCadastrarMovimentacoes() {
-        return cy.get('i[class="fas fa-hand-holding-usd"]');
-    }
 
     retornoHome() {
         return cy.get('i[class="fas fa-home"]');

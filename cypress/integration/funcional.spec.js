@@ -24,9 +24,18 @@ it('Login', () => {
     barrigaReactPageObjects.clickAlterar('Conta para saldo');
  })
 
+ 
  it('Reset it option', () => {
    barrigaReactPageObjects.clickSettings();
    barrigaReactPageObjects.clickReset('Resetar');
+})
+
+
+it('Register transactions', () => {
+   barrigaReactPageObjects.clickCadastrarMovimentacoes();
+   barrigaReactPageObjects.typeDescricao('caixa');
+   barrigaReactPageObjects.typeValor('1000');
+   barrigaReactPageObjects.clickSalvar();
 })
 
 it('Look extract', () => {
@@ -34,9 +43,6 @@ it('Look extract', () => {
    barrigaReactPageObjects.clickExtrato();
 })
 
-it('Register transactions', () => {
-   barrigaReactPageObjects.clickCadastrarMovimentacoes();
-})
 
 it('Return Home', () => {
    barrigaReactPageObjects.clickReturnHome();

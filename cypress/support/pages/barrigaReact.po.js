@@ -32,12 +32,24 @@ class BarrigaReactPageObjects {
         barrigaReactElements.btnReset().click();
     }
 
-    clickExtrato() {
-        barrigaReactElements.menuExtrato().click();
-    }
-
     clickCadastrarMovimentacoes() {
         barrigaReactElements.menuCadastrarMovimentacoes().click();
+    }
+
+    typeDescricao(caixa) {
+        barrigaReactElements.inputDescricao().type(caixa);
+    }
+
+    typeValor() {
+        barrigaReactElements.inputValor().type(1000);
+    }
+
+    clickSalvar() {
+        barrigaReactElements.btnSalvar().click();
+    }
+
+    clickExtrato() {
+        barrigaReactElements.menuExtrato().click();
     }
 
     clickReturnHome() {
