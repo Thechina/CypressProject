@@ -33,8 +33,9 @@ it('Login', () => {
 
 it('Register transactions', () => {
    barrigaReactPageObjects.clickCadastrarMovimentacoes();
-   barrigaReactPageObjects.typeDescricao('caixa');
-   barrigaReactPageObjects.typeValor('1000');
+   barrigaReactPageObjects.typeDescricao('banco');
+   barrigaReactPageObjects.typeValue('1000');
+   barrigaReactPageObjects.typeInteressado('aluguel');
    barrigaReactPageObjects.clickSalvar();
 })
 
@@ -47,3 +48,9 @@ it('Look extract', () => {
 it('Return Home', () => {
    barrigaReactPageObjects.clickReturnHome();
 })
+
+it('Reset it option', () => {
+   barrigaReactPageObjects.clickSettings();
+   barrigaReactPageObjects.clickExit('Sair');
+})
+

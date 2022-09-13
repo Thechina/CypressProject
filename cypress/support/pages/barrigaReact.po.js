@@ -36,13 +36,19 @@ class BarrigaReactPageObjects {
         barrigaReactElements.menuCadastrarMovimentacoes().click();
     }
 
-    typeDescricao(caixa) {
-        barrigaReactElements.inputDescricao().type(caixa);
+    typeDescricao(banco) {
+        barrigaReactElements.inputDescricao().type(banco);
     }
 
-    typeValor() {
-        barrigaReactElements.inputValor().type(1000);
+    typeValue() {
+        barrigaReactElements.inputValue().type(1000);
     }
+
+
+    typeInteressado(aluguel) {
+        barrigaReactElements.inputInteressado().type(aluguel);
+    }
+
 
     clickSalvar() {
         barrigaReactElements.btnSalvar().click();
@@ -52,8 +58,20 @@ class BarrigaReactPageObjects {
         barrigaReactElements.menuExtrato().click();
     }
 
+   
+
     clickReturnHome() {
         barrigaReactElements.retornoHome().click();
     }
+
+    clickSettings() {
+        barrigaReactElements.btnSettings().click();
+    }
+
+    clickExit() {
+        barrigaReactElements.btnExit().click();
+    }
+
+
 }
 export default BarrigaReactPageObjects

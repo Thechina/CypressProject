@@ -37,8 +37,13 @@ class BarrigaReactElements {
         return cy.get('[data-test=descricao]');
     }
 
-    inputValor() {
+
+    inputValue() {
         return cy.get('[data-test="valor"]');
+    }
+
+    inputInteressado() {
+        return cy.get('[data-test=envolvido]');
     }
 
     btnSalvar() {
@@ -53,5 +58,14 @@ class BarrigaReactElements {
     retornoHome() {
         return cy.get('i[class="fas fa-home"]');
     }
+
+    btnSettings() {
+        return cy.get('i[title="settings"]');
+    }
+
+    btnExit() {
+        return cy.contains('a', 'Sair');
+    }
+   
 }
 export default BarrigaReactElements
