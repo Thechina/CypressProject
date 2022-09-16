@@ -23,19 +23,18 @@ it('Login', () => {
  it('Update Conta alterada option', () => {
     barrigaReactPageObjects.clickAlterar('Conta para saldo');
  })
-
  
  it('Reset it option', () => {
    barrigaReactPageObjects.clickSettings();
    barrigaReactPageObjects.clickReset('Resetar');
 })
 
-
 it('Register transactions', () => {
    barrigaReactPageObjects.clickCadastrarMovimentacoes();
    barrigaReactPageObjects.typeDescricao('banco');
    barrigaReactPageObjects.typeValue('1000');
    barrigaReactPageObjects.typeInteressado('aluguel');
+   barrigaReactPageObjects.selectConta('Conta para movimentacoes');
    barrigaReactPageObjects.clickSalvar();
 })
 
@@ -43,7 +42,6 @@ it('Look extract', () => {
    barrigaReactPageObjects.clickSettings();
    barrigaReactPageObjects.clickExtrato();
 })
-
 
 it('Return Home', () => {
    barrigaReactPageObjects.clickReturnHome();
@@ -53,4 +51,3 @@ it('Reset it option', () => {
    barrigaReactPageObjects.clickSettings();
    barrigaReactPageObjects.clickExit('Sair');
 })
-

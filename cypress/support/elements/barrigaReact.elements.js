@@ -23,7 +23,6 @@ class BarrigaReactElements {
     btnAlterar() {
         return cy.get('i[class="far fa-edit"]');
     }
-
     
     btnReset() {
         return cy.contains('a', 'Resetar');
@@ -37,13 +36,16 @@ class BarrigaReactElements {
         return cy.get('[data-test=descricao]');
     }
 
-
     inputValue() {
         return cy.get('[data-test="valor"]');
     }
 
     inputInteressado() {
         return cy.get('[data-test=envolvido]');
+    }
+
+    selectConta() {
+        return cy.get('select[data-test="conta"]');
     }
 
     btnSalvar() {
@@ -53,7 +55,6 @@ class BarrigaReactElements {
     menuExtrato() {
         return cy.get('i[title="extrato"]');  
     }
-
 
     retornoHome() {
         return cy.get('i[class="fas fa-home"]');
